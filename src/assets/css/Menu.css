@@ -1,0 +1,36 @@
+.menu {
+  height: 70px;
+  line-height: 70px;
+  padding: 0 200px;
+  -moz-box-shadow: 0px 0px 5px 0px #999;
+  -webkit-box-shadow: 0px 0px 5px 0px #999;
+  -o-box-shadow: 0px 0px 5px 0px #999;
+  box-shadow: 0px 0px 5px 0px #999;
+  background-color: #fff;
+}
+
+.menu img {
+  height: 40px;
+  float: left;
+  vertical-align: middle;
+  position: relative;
+  top: 15px;
+}
+
+.menu .nav {
+  list-style: none;
+  float: right;
+  text-align: center;
+}
+
+.menu .nav li {
+  display: inline-block;
+  width: 100px;
+  color: #555;
+  transition: 0.4s;
+}
+
+.menu .nav li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: 0.4s;
+}

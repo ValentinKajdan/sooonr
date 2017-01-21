@@ -1,0 +1,70 @@
+.content {
+  padding: 20px 200px;
+}
+
+/* SON */
+
+.son {
+  width: 60%;
+  height: auto;
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 6px;
+
+  -moz-box-shadow: 0px 0px 5px 0px #bbb;
+  -webkit-box-shadow: 0px 0px 5px 0px #bbb;
+  -o-box-shadow: 0px 0px 5px 0px #bbb;
+  box-shadow: 0px 0px 5px 0px #bbb;
+}
+.son a {
+  color: #555;
+}
+.son a:hover {
+  color: #C62828;
+}
+.son a h3 {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.son img {
+  border-radius: 6px;
+}
+
+/* Title Card */
+
+.titleCard {
+  height: 50px;
+  margin: 5px 0;
+}
+.titleCard > a {
+  display: inline-block;
+}
+.titleCard > span {
+  float: right;
+}
+
+ /* details */
+
+.details, .pics {
+  display: inline-block;
+  width: 50%;
+}
+.details {
+  float: right;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: justify;
+}
+.detailsPost {
+  margin: 10px 0;
+}
+.detailsPost span {
+  display: block;
+}
+
+.detailsPost .kiff {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
