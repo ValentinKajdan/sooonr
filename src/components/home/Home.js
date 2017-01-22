@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { StickyContainer, Sticky } from 'react-sticky';
 import Menu from '../menu/Menu';
 import Aside from '../aside/Aside';
 import Content from './Content';
-import { StickyContainer, Sticky } from 'react-sticky';
 
 require ('../../assets/css/Home.css');
 

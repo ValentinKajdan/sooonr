@@ -4,7 +4,7 @@ import Details from './Details';
 import TitleCard from './TitleCard';
 require ('../../assets/css/Home.css');
 
-class Son extends Component {
+class Card extends Component {
 
   constructor(props) {
     super(props);
@@ -25,16 +25,23 @@ class Son extends Component {
 
   render() {
 
-
     return (
-      <article className="son shadow">
+      <article className="card shadow">
+        <Pics Ref={this.props.Ref} Title={this.props.Title} />
         <TitleCard Title={this.props.Title} LinkVideo={this.props.LinkVideo} />
-        <Pics Ref={this.props.Ref} />
-        <Details Desc={this.props.Desc} Author={this.props.Author} Date={this.props.Date} kiff={this.state.kiff} />
-        <button onClick={this.addValue}>clic</button>
       </article>
     );
+
+
+    // return (
+    //   <article className="son shadow">
+    //     <TitleCard Title={this.props.Title} LinkVideo={this.props.LinkVideo} />
+    //     <Pics Ref={this.props.Ref} />
+    //     <Details Desc={this.props.Desc} Author={this.props.Author} Date={this.props.Date} kiff={this.state.kiff} />
+    //     <button onClick={this.addValue}>clic</button>
+    //   </article>
+    // );
   }
 }
 
-export default Son;
+export default Card;

@@ -4,7 +4,9 @@
 
 .content {
   width: 65%;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .shadow {
@@ -14,27 +16,29 @@
   box-shadow: 0px 0px 5px 0px #bbb;
 }
 
-/* SON */
+/* CARD */
 
-.son {
-  width: 100%;
+.card {
+  width: 48%;
   height: auto;
-  padding: 15px 25px;
+  /*padding: 15px 25px;*/
   margin-bottom: 25px;
   background-color: #fff;
   border-radius: 6px;
 }
-.son:hover > a .pics img {
-  width: 365px;
+.pics:hover > img {
+  width: 105%;
   transition: 0.5s;
+  opacity: 0.5;
 }
-.son a {
+
+.card a {
   color: #555;
 }
-.son a:hover {
+.card a:hover {
   color: #C62828;
 }
-.son a h3 {
+.card a h3 {
   padding: 0;
   padding-bottom: 20px;
   margin: 0;
@@ -44,14 +48,34 @@
 /* Title Card */
 
 .titleCard {
-  height: 50px;
-  margin: 5px 0;
+  height: 40px;
+  width: 100%;
 }
-.titleCard > a {
-  display: inline-block;
+.titleCard > h3 {
+  color: #fff;
+  position: relative;
+  bottom: 60px;
+  left: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 24px;
+  width: 92%;
+  white-space: nowrap;
 }
 .titleCard > span {
+  position: relative;
+  bottom: 62px;
+  left: 4px;
+}
+.titleCard > .tags {
+  position: relative;
+  bottom: 60px;
+  right: 4px;
+}
+.tags {
   float: right;
+  display: flex;
+  flex-wrap: wrap;
 }
 
  /* details */
@@ -83,17 +107,24 @@
 /* Pics */
 
 .pics {
-  border-radius: 6px;
   height: 195px;
-  width: 350px;
-  overflow: hidden
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .pics img {
-  position:relative;
-  margin:auto;
-  top: -35px;
-  bottom: -35px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  top: -50px;
 
   transition: 0.5s;
 }

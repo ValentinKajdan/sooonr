@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Son from './Son';
+import Card from './Card';
 require ('../../assets/css/Home.css');
 
 class Content extends Component {
@@ -36,6 +36,15 @@ class Content extends Component {
         author : "Vioster",
         date : "21/01/2017",
         kiff : 36
+      },
+      {
+        id : 4,
+        title : "Tekilla - ALBUM COMPLET - Le Retour Du Sombre Héros",
+        linkVideo : "https://www.youtube.com/watch?v=NqeEpkswZ9Q",
+        desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt arcu sit amet porttitor ultricies. Aliquam non sapien rhoncus, ultrices sem eu, consequat neque. Sed ornare dui libero. Nulla vitae tempor metus. Etiam vel semper risus. Ut eu finibus purus, id porta quam. In imperdiet pharetra magna id blandit. Fusce ullamcorper pellentesque mauris vel faucibus.",
+        author : "Vioster",
+        date : "21/01/2017",
+        kiff : 29
       }
     ]
 
@@ -43,7 +52,7 @@ class Content extends Component {
       <div className="content">
         {/*<h2>Derniers sons</h2>*/}
         { datas.map((data) =>
-          <Son key={data.id} Ref={this.refYoutube(data.linkVideo)} Title={data.title} LinkVideo={data.linkVideo} Pics={data.pics} Desc={data.desc} Author={data.author} Date={data.date} Kiff={data.kiff} />
+          <Card key={data.id} Ref={this.refYoutube(data.linkVideo)} Title={data.title} LinkVideo={data.linkVideo} Pics={data.pics} Desc={data.desc} Author={data.author} Date={data.date} Kiff={data.kiff} />
         )}
       </div>
     );
