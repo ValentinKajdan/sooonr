@@ -1,0 +1,22 @@
+.aside {
+  position: fixed;
+  right: 0;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 15px 25px;
+}
+
+.banner {
+  width: 310px;
+  text-align: center;
+}
+
+.margintop {
+  margin-top: 20px;
+}
+
+.container div div:nth-child(2) {
+  float: right;
+}

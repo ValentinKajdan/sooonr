@@ -3,19 +3,48 @@ import Son from './Son';
 require ('../../assets/css/Home.css');
 
 class Content extends Component {
-  render() {
 
-    const title = "Suik'on Blaze AD - Plus Belle La Vie";
-    const linkVideo = "https://www.youtube.com/watch?v=M8svcRUtRuw";
-    const pics = "https://img.youtube.com/vi/M8svcRUtRuw/maxresdefault.jpg";
-    const desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt arcu sit amet porttitor ultricies. Aliquam non sapien rhoncus, ultrices sem eu, consequat neque. Sed ornare dui libero. Nulla vitae tempor metus. Etiam vel semper risus. Ut eu finibus purus, id porta quam. In imperdiet pharetra magna id blandit. Fusce ullamcorper pellentesque mauris vel faucibus.";
-    const author = "Vioster";
-    const date = "20/01/2017";
+  refYoutube(string) {
+    return string.split("=")[1];
+  }
+
+  render() {
+    const datas = [
+      {
+        id : 1,
+        title : "Suik'on Blaze AD - Plus Belle La Vie",
+        linkVideo : "https://www.youtube.com/watch?v=M8svcRUtRuw",
+        desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt arcu sit amet porttitor ultricies. Aliquam non sapien rhoncus, ultrices sem eu, consequat neque. Sed ornare dui libero. Nulla vitae tempor metus. Etiam vel semper risus. Ut eu finibus purus, id porta quam. In imperdiet pharetra magna id blandit. Fusce ullamcorper pellentesque mauris vel faucibus.",
+        author : "Vioster",
+        date : "20/01/2017",
+        kiff : 96
+      },
+      {
+        id : 2,
+        title : "Neyg, Lazare, Polo, Le Bon Nob, Chris Taylor, Loko, Dem - Freestyle",
+        linkVideo : "https://www.youtube.com/watch?v=HHIpDuzIU0k",
+        desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt arcu sit amet porttitor ultricies. Aliquam non sapien rhoncus, ultrices sem eu, consequat neque. Sed ornare dui libero. Nulla vitae tempor metus. Etiam vel semper risus. Ut eu finibus purus, id porta quam. In imperdiet pharetra magna id blandit. Fusce ullamcorper pellentesque mauris vel faucibus.",
+        author : "Vioster",
+        date : "21/01/2017",
+        kiff : 124
+      },
+      {
+        id : 3,
+        title : "Fadah (saydatyph/omerta) - Jamais à l'heure - Prod by Mani Deiz",
+        linkVideo : "https://www.youtube.com/watch?v=HP0qJf34kfk",
+        desc : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt arcu sit amet porttitor ultricies. Aliquam non sapien rhoncus, ultrices sem eu, consequat neque. Sed ornare dui libero. Nulla vitae tempor metus. Etiam vel semper risus. Ut eu finibus purus, id porta quam. In imperdiet pharetra magna id blandit. Fusce ullamcorper pellentesque mauris vel faucibus.",
+        author : "Vioster",
+        date : "21/01/2017",
+        kiff : 36
+      }
+    ]
 
     return (
       <div className="content">
         {/*<h2>Derniers sons</h2>*/}
-        <Son Title={title} LinkVideo={linkVideo} Pics={pics} Desc={desc} Author={author} Date={date} />
+        { datas.map((data) =>
+          <Son key={data.id} Ref={this.refYoutube(data.linkVideo)} Title={data.title} LinkVideo={data.linkVideo} Pics={data.pics} Desc={data.desc} Author={data.author} Date={data.date} Kiff={data.kiff} />
+        )}
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 require ('../../assets/css/Home.css');
 import RaisedButton from 'material-ui/RaisedButton';
-import { Link } from 'react-router';
 
 class TitleCard extends Component {
 
@@ -10,8 +9,6 @@ class TitleCard extends Component {
   }
 
   render() {
-
-    console.log(this.props);
 
     return (
     <div className="titleCard">

@@ -1,20 +1,32 @@
-.content {
+.container {
   padding: 20px 200px;
+}
+
+.content {
+  width: 65%;
+  display: inline-block;
+}
+
+.shadow {
+  -moz-box-shadow: 0px 0px 5px 0px #bbb;
+  -webkit-box-shadow: 0px 0px 5px 0px #bbb;
+  -o-box-shadow: 0px 0px 5px 0px #bbb;
+  box-shadow: 0px 0px 5px 0px #bbb;
 }
 
 /* SON */
 
 .son {
-  width: 60%;
+  width: 100%;
   height: auto;
   padding: 15px 25px;
+  margin-bottom: 25px;
   background-color: #fff;
   border-radius: 6px;
-
-  -moz-box-shadow: 0px 0px 5px 0px #bbb;
-  -webkit-box-shadow: 0px 0px 5px 0px #bbb;
-  -o-box-shadow: 0px 0px 5px 0px #bbb;
-  box-shadow: 0px 0px 5px 0px #bbb;
+}
+.son:hover > a .pics img {
+  width: 365px;
+  transition: 0.5s;
 }
 .son a {
   color: #555;
@@ -26,9 +38,7 @@
   padding: 0;
   padding-bottom: 20px;
   margin: 0;
-}
-.son img {
-  border-radius: 6px;
+  width: 660px;
 }
 
 /* Title Card */
@@ -58,6 +68,7 @@
 }
 .detailsPost {
   margin: 10px 0;
+  float: none !important;
 }
 .detailsPost span {
   display: block;
@@ -67,4 +78,22 @@
   text-align: center;
   font-size: 22px;
   font-weight: bold;
+}
+
+/* Pics */
+
+.pics {
+  border-radius: 6px;
+  height: 195px;
+  width: 350px;
+  overflow: hidden
+}
+
+.pics img {
+  position:relative;
+  margin:auto;
+  top: -35px;
+  bottom: -35px;
+
+  transition: 0.5s;
 }

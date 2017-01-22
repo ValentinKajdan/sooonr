@@ -3,6 +3,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 // Routes Import
 import Home from '../components/home/Home';
+import NoMatch from '../components/404';
 
 class Routes extends Component {
   render() {
@@ -11,6 +12,7 @@ class Routes extends Component {
         <Route path="/" component={Home}>
           <IndexRoute component={Home}/>
         </Route>
+        <Route path="*" component={NoMatch}/>
       </Router>
     )
   }
