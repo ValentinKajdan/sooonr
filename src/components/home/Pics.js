@@ -17,6 +17,9 @@ class Pics extends Component {
     return (
       <Link to={`/`} >
         <div className="pics">
+          <h3>
+            {this.props.Title}
+          </h3>
           <img src={linkPics} alt="thumbnails" title={this.props.Title} />
         </div>
       </Link>

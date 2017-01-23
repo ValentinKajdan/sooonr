@@ -27,8 +27,11 @@ class Card extends Component {
 
     return (
       <article className="card shadow">
+        <div className="vote">
+          {this.state.kiff}
+        </div>
         <Pics Ref={this.props.Ref} Title={this.props.Title} />
-        <TitleCard Title={this.props.Title} LinkVideo={this.props.LinkVideo} />
+        <TitleCard LinkVideo={this.props.LinkVideo} Date={this.props.Date} Author={this.props.Author} />
       </article>
     );
 

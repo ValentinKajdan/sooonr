@@ -13,13 +13,13 @@ class TitleCard extends Component {
 
     return (
     <div className="titleCard">
-      <h3>
-        {this.props.Title}
-      </h3>
-      <span>
+      {/*<span>
         <a href={this.props.LinkVideo} target="_blank">
           <RaisedButton label="Lien" backgroundColor="#C62828" labelColor="#fff" />
         </a>
+      </span>*/}
+      <span>
+        le {this.props.Date } par {this.props.Author}
       </span>
       <div className="tags">
         <Chip>Chill</Chip>

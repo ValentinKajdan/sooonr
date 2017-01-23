@@ -27,7 +27,7 @@
   border-radius: 6px;
 }
 .pics:hover > img {
-  width: 105%;
+  width: 125%;
   transition: 0.5s;
   opacity: 0.5;
 }
@@ -38,39 +38,24 @@
 .card a:hover {
   color: #C62828;
 }
-.card a h3 {
-  padding: 0;
-  padding-bottom: 20px;
-  margin: 0;
-  width: 660px;
+.vote {
+  z-index: 1;
+  height: 0;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 20px;
 }
 
 /* Title Card */
 
 .titleCard {
   height: 40px;
-  width: 100%;
-}
-.titleCard > h3 {
-  color: #fff;
-  position: relative;
-  bottom: 60px;
-  left: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  height: 24px;
-  width: 92%;
-  white-space: nowrap;
-}
-.titleCard > span {
-  position: relative;
-  bottom: 62px;
-  left: 4px;
-}
-.titleCard > .tags {
-  position: relative;
-  bottom: 60px;
-  right: 4px;
+  line-height: 40px;
+  width: 95%;
+  margin: auto;
+  float: none !important;
 }
 .tags {
   float: right;
@@ -123,8 +108,20 @@
 .pics img {
   position: relative;
   margin: auto;
-  width: 100%;
-  top: -50px;
+  width: 120%;
+  top: -110px;
 
   transition: 0.5s;
+}
+.pics > h3 {
+  z-index: 1;
+  color: #fff;
+  position: relative;
+  bottom: -125px;
+  left: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 24px;
+  width: 92%;
+  white-space: nowrap;
 }
