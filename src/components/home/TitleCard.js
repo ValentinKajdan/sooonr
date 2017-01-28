@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 require ('../../assets/css/Home.css');
 import RaisedButton from 'material-ui/RaisedButton';
 import Chip from 'material-ui/Chip';
+import { FormattedRelative, IntlProvider }  from 'react-intl';
+import fr from 'react-intl/locale-data/fr';
+import { addLocaleData } from 'react-intl';
+addLocaleData([...fr]);
 import { Link } from 'react-router';
 
 class TitleCard extends Component {
@@ -20,17 +24,19 @@ class TitleCard extends Component {
         </a>
       </span>*/}
       <Link to={`/son/${this.props.sonId}`}>
-        <h3>
+        <h3 title={this.props.Title}>
           {this.props.Title}
         </h3>
       </Link>
-      {/*<span>
-        Le {this.props.Date } par {this.props.Author}
-      </span> */}
       <div className="tags">
         <Chip>Chill</Chip>
         <Chip>Old School</Chip>
       </div>
+      <span className="dateAuthor">
+        <IntlProvider locale={navigator.language}>
+          <FormattedRelative value={new Date(1459913574887)}/>
+        </IntlProvider>, Par {this.props.Author}
+      </span>
     </div>
     );
   }
