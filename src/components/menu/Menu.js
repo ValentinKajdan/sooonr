@@ -10,11 +10,11 @@ class Menu extends Component {
 
     return (
       <header className="menu">
-        <a>
+        {/*<a>
           <Link to={`/`} >
             <img src={logo} className="App-logo" alt="logo" />
           </Link>
-        </a>
+        </a>*/}
         <ul className="nav">
           <Link to={`/`} ><li><FlatButton label="Home" /></li></Link>
           <Link to={`/`} ><li><FlatButton label="Contact" /></li></Link>

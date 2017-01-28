@@ -15,14 +15,10 @@ class Pics extends Component {
     const linkPics = `https://i.ytimg.com/vi/${this.props.Ref}/hqdefault.jpg`
 
     return (
-      <Link to={`/`} >
-        <div className="pics">
-          <h3>
-            {this.props.Title}
-          </h3>
-          <img src={linkPics} alt="thumbnails" title={this.props.Title} />
-        </div>
-      </Link>
+      <div className="pics">
+        
+        <img src={linkPics} alt="thumbnails" title={this.props.Title} />
+      </div>
     );
   }
 

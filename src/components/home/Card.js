@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Pics from './Pics';
 import Details from './Details';
 import TitleCard from './TitleCard';
+import { Link } from 'react-router';
 require ('../../assets/css/Home.css');
 
 class Card extends Component {
@@ -28,10 +29,14 @@ class Card extends Component {
     return (
       <article className="card shadow">
         <div className="vote">
-          {this.state.kiff}
+          <span>
+            {this.state.kiff}
+          </span>
         </div>
-        <Pics Ref={this.props.Ref} Title={this.props.Title} />
-        <TitleCard LinkVideo={this.props.LinkVideo} Date={this.props.Date} Author={this.props.Author} />
+        <Link to={`/son/${this.props.sonId}`}>
+          <Pics Ref={this.props.Ref} />
+        </Link>
+        <TitleCard LinkVideo={this.props.LinkVideo} Date={this.props.Date} Author={this.props.Author} Title={this.props.Title} sonId={this.props.sonId} />
       </article>
     );
 

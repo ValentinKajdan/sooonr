@@ -3,21 +3,20 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { StickyContainer, Sticky } from 'react-sticky';
 import Menu from '../menu/Menu';
 import Aside from '../aside/Aside';
-import Content from './Content';
 
 require ('../../assets/css/Home.css');
 
-class Home extends Component {
+class Single extends Component {
   render() {
 
     return (
       <MuiThemeProvider>
-        <div className="Home">
+        <div>
           <Menu />
           <div className="container">
             <StickyContainer>
-              <Content />
-              <Aside />              
+              <div>salut</div>
+              <Aside />
             </StickyContainer>
           </div>
         </div>
@@ -26,4 +25,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Single;

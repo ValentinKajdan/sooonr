@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './Card';
+import { Link } from 'react-router';
 require ('../../assets/css/Home.css');
 
 class Content extends Component {
@@ -87,7 +88,7 @@ class Content extends Component {
       <div className="content">
         {/*<h2>Derniers sons</h2>*/}
         { datas.map((data) =>
-          <Card key={data.id} Ref={this.refYoutube(data.linkVideo)} Title={data.title} LinkVideo={data.linkVideo} Pics={data.pics} Desc={data.desc} Author={data.author} Date={data.date} Kiff={data.kiff} />
+            <Card key={data.id} sonId={data.id} Ref={this.refYoutube(data.linkVideo)} Title={data.title} LinkVideo={data.linkVideo} Pics={data.pics} Desc={data.desc} Author={data.author} Date={data.date} Kiff={data.kiff} />
         )}
       </div>
     );

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 require ('../../assets/css/Home.css');
 import RaisedButton from 'material-ui/RaisedButton';
 import Chip from 'material-ui/Chip';
+import { Link } from 'react-router';
 
 class TitleCard extends Component {
 
@@ -18,9 +19,14 @@ class TitleCard extends Component {
           <RaisedButton label="Lien" backgroundColor="#C62828" labelColor="#fff" />
         </a>
       </span>*/}
-      <span>
-        le {this.props.Date } par {this.props.Author}
-      </span>
+      <Link to={`/son/${this.props.sonId}`}>
+        <h3>
+          {this.props.Title}
+        </h3>
+      </Link>
+      {/*<span>
+        Le {this.props.Date } par {this.props.Author}
+      </span> */}
       <div className="tags">
         <Chip>Chill</Chip>
         <Chip>Old School</Chip>
