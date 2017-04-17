@@ -6,9 +6,11 @@ import Aside from '../aside/Aside';
 import Content from './Content';
 
 require ('../../assets/css/Home.css');
+// require ('../../config/Database.js');
 
 class Home extends Component {
   render() {
+
 
     return (
       <MuiThemeProvider>
@@ -17,7 +19,7 @@ class Home extends Component {
           <div className="container">
             <StickyContainer>
               <Content />
-              <Aside />              
+              <Aside />
             </StickyContainer>
           </div>
         </div>
