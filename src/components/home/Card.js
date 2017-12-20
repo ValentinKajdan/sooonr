@@ -34,7 +34,7 @@ class Card extends Component {
           </span>
         </div>
         <Link to={`/son/${this.props.sonId}`}>
-          <Pics Ref={this.props.Ref} />
+          <Pics Ref={this.props.Ref} pic={this.props.pic} />
         </Link>
         <TitleCard LinkVideo={this.props.LinkVideo} Date={this.props.Date} Author={this.props.Author} Title={this.props.Title} sonId={this.props.sonId} />
       </article>

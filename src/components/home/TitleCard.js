@@ -29,12 +29,12 @@ class TitleCard extends Component {
         </h3>
       </Link>
       <div className="tags">
-        <Chip>Chill</Chip>
-        <Chip>Old School</Chip>
+        <Chip>Paris</Chip>
+        <Chip>Musique</Chip>
       </div>
       <span className="dateAuthor">
         <IntlProvider locale={navigator.language}>
-          <FormattedRelative value={new Date(1459913574887)}/>
+          <FormattedRelative value={Date.now()}/>
         </IntlProvider>, Par {this.props.Author}
       </span>
     </div>

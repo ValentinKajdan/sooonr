@@ -14,7 +14,7 @@ class Aside extends Component {
 
       <Sticky topOffset={-20} stickyClassName={"margintop"}>
         <aside className="aside shadow">
-          <RaisedButton backgroundColor="#3F51B5" labelColor="#fff" label="Nouveau son" fullWidth={true} icon={<ActionAdd />} />
+          <RaisedButton backgroundColor="#3F51B5" labelColor="#fff" label="Ajouter un évènement" fullWidth={true} icon={<ActionAdd />} />
           <FontIcon
             className="muidocs-icon-action-home"
           />

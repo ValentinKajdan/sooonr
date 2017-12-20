@@ -5,6 +5,8 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import Home from '../components/home/Home';
 import Single from '../components/single/Single';
 import NoMatch from '../components/404';
+// import Api from '../../api/get_posts.php';
+// import Api from '../components/home/Home';
 
 class Routes extends Component {
   render() {

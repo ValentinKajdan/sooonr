@@ -12,7 +12,7 @@ class Menu extends Component {
       <header className="menu">
         <Link to={`/`} >
           {/*<img src={logo} className="App-logo" alt="logo" />*/}
-          Propers
+          Title
         </Link>
         <ul className="nav">
           <Link to={`/`} ><li><FlatButton label="Home" /></li></Link>

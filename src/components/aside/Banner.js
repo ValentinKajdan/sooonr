@@ -11,7 +11,7 @@ class Banner extends Component {
 
       <div className="banner">
         <h3>
-          Catégorie
+          Catégories
         </h3>
       </div>
 
